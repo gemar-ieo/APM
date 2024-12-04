@@ -2,7 +2,7 @@
 
 Automatic Pockmarks Mapping (APM) is an add-in for ArcGis Desktop developed by Grupo de Geociencias Marinas of the Instituto Español de Oceanografía (IEO-CSIC).  The application provides a set of geoprocessing tools for automating the task of mapping pockmarks and extracting some geomorphometric parameters. 
 
-## Instalation
+## Installation
 To install them simply double click the Add-In file **AUTOMATIC_POCKMARK_MAPPING_201124.esriAddIn**. Once installed, it is not necessary to keep the Add-In file in the computer, it will be copied to *"<user_directory>\Documents\ArcGIS\AddIns"*.
 
 Then, they should appear in the Add-In Manager of ArcMap , under *Menu > Customize > Add-In Manager*.
