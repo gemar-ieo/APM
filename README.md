@@ -18,13 +18,13 @@ To add tool:
 
 ## Usage
 
-<img src="https://gemar-ieo.github.io/APM/Images/APM_main_menu.jpg" />
-
 To use the Add-In simply click on the added toolbox and select the options: a)Bathymetric Raster Optimization, b)Pockmarks Mapping, and c)Extraction of Pockmarks Parameters. Each option includes several tools.
+
+<img src="https://gemar-ieo.github.io/APM/Images/APM_main_menu.jpg" />
 
 + **Bathymetric Raster Optimization:** The Bathymetry Raster Optimization tool enhances the quality and visualization of bathymetric data by applying optional filtering and hillshading techniques. First, a low-pass filter smooths the data reducing noise and eliminating anomalies. Next, the hillshade tool generates a visually enhanced surface by simulating illumination based on user-defined light source parameters. This streamlined process ensures high-quality Digital Elevation Models (DEMs) and improved data visualization, making it an essential tool for bathymetric analysis.
 
-<img src="https://gemar-ieo.github.io/APM/Images/APM_bathy_optimization.jpg" />
+<img src="https://gemar-ieo.github.io/APM/Images/APM_bathy_optimizaton.jpg" />
 
 + **Pockmarks Mapping:** The Pockmark Mapping Tool automates and refines the identification and analysis of seafloor depressions called pockmarks. It operates in three stages:
 
@@ -45,7 +45,7 @@ The tool produces high-quality, customizable pockmark maps ready for further geo
 
 2.- Final Extraction and Density Mapping: Low points for each pockmark are identified, prioritizing proximity to polygon centroids to account for seafloor gradients. Final pockmark polygons are generated with height data and classified as single or multiple pockmarks. Finally, a spatial density map is produced using the Kernel Density tool, offering a comprehensive visualization of pockmark distribution.
 
-<img src="<img src="https://gemar-ieo.github.io/APM/Images/extraction_parameters.jpg" />" />
+<img src="<img src="https://gemar-ieo.github.io/APM/Images/APM_extraction_parameters.jpg" />" />
 
 
 ## References (reference will be updated when published)
