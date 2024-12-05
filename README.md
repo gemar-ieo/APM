@@ -52,3 +52,7 @@ This tool calculates geometric and morphological features of pockmarks:
 
 ## References
 >Fernández-Salas, L.M., Sánchez-Guillamón, O., Villar-Menéndez, I., Díez-García, I.P., Arrese, B. and Sayago-Gil, M. (sent to publish). "From Manual to Automatic: Using ArcGIS Model Builder to Efficiently Map and Characterize Pockmarks." *Computers & Geosciences*, xxx(xxx), xxx. [https://doi.org/xxxx](https://doi.org/xxxx)
+
+## Learn More
+
+For more details about the **Automatic Pockmarks Mapping (APM)** tool, visit the [official website](https://gemar.ieo.csic.es/APM/).
