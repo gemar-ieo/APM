@@ -26,11 +26,11 @@ Proceed with pockmark extraction using the following parameters:
 - BPI threshold: -0.9
 - Irregularity index threshold: 2.1
 
-This step results in a shapefile of pockmarks, shown below:
+You should adjust these parameters for your data.
 
 ![Pockmark Extraction](https://gemar-ieo.github.io/APM/test/Images/06_BLOQUE2B_PANTALLA.jpg)
 
-The extracted pockmarks are displayed in the image below:
+The extracted pockmarks shapefile are displayed in the image below:
 
 ![Pockmark Extraction Result](https://gemar-ieo.github.io/APM/test/Images/07_BLOQUE2B_RESULTADO.jpg)
 
