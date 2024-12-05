@@ -13,7 +13,7 @@ The result after filtering errors is shown here:
 ![Optimized Bathymetry](https://gemar-ieo.github.io/APM/test/Images/03_BLOQUE1_RESULTADO.jpg)
 
 ## Step 3: Pockmarks Mapping
-Now, proceed with the Pockmarks Mapping tool, starting with the creation of the Bathymetric Position Index (BPI). The parameters used are radii of 20 and 100 for the continental slope zone of Murcia. The settings are shown in the image below:
+Now, proceed with the Pockmarks Mapping tool, starting with the creation of the Bathymetric Position Index (BPI). The parameters used are radii of 20 and 100 for this area, you should adjust these parameters for your data. The settings are shown in the image below:
 
 ![BPI Parameters](https://gemar-ieo.github.io/APM/test/Images/04_BLOQUE2A_PANTALLA.jpg)
 
