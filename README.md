@@ -1,4 +1,5 @@
 # APM Toolbox – Automatic Pockmarks Mapping
+DOI: https://doi.org/10.5281/zenodo.18454767
 
 ## Scientific summary
 
@@ -72,7 +73,7 @@ If you use APM Toolbox in your research, please cite:
 
 Fernández-Salas et al. (2026)  
 APM Toolbox v1.0  
-Zenodo DOI: (pending)
+Zenodo DOI: https://doi.org/10.5281/zenodo.18454767
 
 A software paper describing the toolbox is submitted to the Journal of Open Source Software (JOSS).
 
@@ -83,4 +84,5 @@ This software is released under the GNU General Public License v3.0.
 ## Learn More
 
 For more details about the **Automatic Pockmarks Mapping (APM)** tool, visit the [official website](https://gemar.ieo.csic.es/APM/).
+
 
