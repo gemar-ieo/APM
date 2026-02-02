@@ -29,13 +29,14 @@ authors:
 affiliations:
   - name: Instituto Español de Oceanografía (IEO-CSIC), Centro Oceanográfico de Cádiz, Muelle Pesquero S/N, 11006 Cádiz, Spain.
     index: 1
-  - name: Instituto Español de Oceanografía (IEO-CSIC), Centro Oceanográfico de Málaga,Explanada de San Andrés (Muelle 9) 29002 Puerto de Málaga. Málaga, Spain.
+  - name: Instituto Español de Oceanografía (IEO-CSIC), Centro Oceanográfico de Málaga, Explanada de San Andrés (Muelle 9) 29002 Puerto de Málaga. Málaga, Spain.
     index: 2
   - name: Instituto Español de Oceanografía (IEO-CSIC), Centro Oceanográfico de Gijón, Av. del Príncipe de Asturias, 70 Bis, Gijon-Oeste, 33212 Gijón, Asturias. Spain.
-    index: 4
+    index: 3
   - name: Instituto Español de Oceanografía (IEO-CSIC), Centro Oceanográfico de Vigo, Subida a Radio Faro, 50-52, 36390 Vigo, Pontevedra. Spain.
     index: 4
   - name: Instituto Español de Oceanografía (IEO-CSIC), Servicios Centrales, Madrid, C/ Corazón de María, 8, 28002 Madrid, Spain.
+    index: 5
 date: 2 February 2026
 bibliography: paper.bib
 ---
@@ -55,8 +56,8 @@ In the context of marine geology, there is a growing need to process massive amo
 # State of the field
 
 Existing tools for pockmark mapping generally fall into two categories:
-1.  **Script-based tools**: Methods using R or MATLAB [@Andrews:2010] offer high customization but require the user to be proficient in coding and often lack a visual interface for immediate spatial validation.
-2.  **GIS-specific toolboxes**: Previous work like the semi-automated method by @Gafeira:2012 and @Gafeira:2018 established excellent foundations. 
+1. **Script-based tools**: Methods using R or MATLAB [@Andrews:2010] offer high customization but require the user to be proficient in coding and often lack a visual interface for immediate spatial validation.
+2. **GIS-specific toolboxes**: Previous work like the semi-automated method by @Gafeira:2012 and @Gafeira:2018 established excellent foundations. 
 
 **Why APM? (Build vs. Contribute)**:
 While @Gafeira:2012 provided a path-breaking approach, APM was built to overcome specific limitations observed in previous ArcGIS-based tools. Firstly, APM introduces a unique logic for locating the "low point" of a pockmark on sloping seafloors, avoiding the common error of selecting a point on the rim rather than the true center of the depression. Secondly, APM uses the **Irregularity Index** [@Grosse:2009] as a core filtering parameter, which is more robust than simple circularity filters for natural seabed features. Finally, APM is designed as an "all-in-one" ArcGIS toolbox that requires zero external dependencies, making it more accessible for institutional users with restricted software environments.
@@ -68,9 +69,9 @@ APM was designed following a modular architecture using ArcGIS Model Builder. Th
 ![Flowchart of the APM tool workflow, illustrating the sequential stages from bathymetry optimization to the final extraction of geomorphometric parameters.](flowchart.png)
 
 The design centers on three key components:
--   **Optimization Stage**: Uses focal statistics to handle sensor noise, ensuring that the subsequent Bathymetric Position Index (BPI) calculation does not generate false positives from data artifacts.
--   **Feature Delineation**: Leverages BPI [@Lundblad:2006] to define pockmark rims. The design choice here was to allow a "Selective Manual Cleaning" phase. This reflects a design philosophy of "Human-in-the-loop" AI, acknowledging that geological expertise is still necessary to distinguish pockmarks from other depressions like ship-wreck scours or dredging marks.
--   **Geomorphometric Engine**: Automatically extracts 12+ parameters. A significant design implementation is the automated azimuth calculation, which uses the "Longest Axis" method to determine pockmark orientation, vital for interpreting bottom currents [@Picard:2018].
+- **Optimization Stage**: Uses focal statistics to handle sensor noise, ensuring that the subsequent Bathymetric Position Index (BPI) calculation does not generate false positives from data artifacts.
+- **Feature Delineation**: Leverages BPI [@Lundblad:2006] to define pockmark rims. The design choice here was to allow a "Selective Manual Cleaning" phase. This reflects a design philosophy of "Human-in-the-loop" AI, acknowledging that geological expertise is still necessary to distinguish pockmarks from other depressions like ship-wreck scours or dredging marks.
+- **Geomorphometric Engine**: Automatically extracts 12+ parameters. A significant design implementation is the automated azimuth calculation, which uses the "Longest Axis" method to determine pockmark orientation, vital for interpreting bottom currents [@Picard:2018].
 
 # Research impact statement
 
