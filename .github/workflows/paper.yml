@@ -10,7 +10,8 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Build PDF
-        uses: openjournals/openjournals-multi-action@v1
+        # Cambiamos a la acción directa de Inara
+        uses: openjournals/inara-action@master
         with:
           journal: joss
           paper-path: paper.md
