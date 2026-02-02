@@ -68,7 +68,7 @@ The APM tool is implemented using **ArcGIS Model Builder**, enabling a visual an
 2.  **Pockmark Mapping**: This core function utilizes the BPI algorithm [@Lundblad:2006] to detect concave features. It converts these features into polygons and performs initial filtering based on thresholds for basal area and an **Irregularity Index** [@Grosse:2009]. This stage allows for a "Selective Manual Cleaning" step, where the user can visually inspect and remove artifacts (e.g., contouritic moats or data errors) before final parameter calculation.
 3.  **Pockmark Parameters Extraction**: The final stage computes morphometric variables for each identified feature, including width, length, orientation, and specific depth metrics. It produces a final shapefile of pockmarks, a dataset of their associated low points, and a Kernel Density map of the field.
 
-![Flowchart illustrating the sequential stages of the APM tool workflow.](flowchart.png)
+![Flowchart illustrating the sequential stages of the APM tool workflow.](https://github.com/gemar-ieo/APM/blob/main/Images/flowchart.png)
 
 # Reliability and Research Application
 
@@ -80,6 +80,6 @@ While complex, clustered pockmark chains remain a challenge for any automated al
 
 # Acknowledgements
 
-This research was supported by the Spain Ministry for the Ecological Transition and Demographic Challenge through the **LIFE-IP-INTEMARES** (LIFE 15 IPE ES012) and **VIATAR** projects. We thank the crews of R/V *Angeles Alvariño* and R/V *Ramón Margalef* for their assistance in data collection. This work contributes to the EsMarEs project (Marine Strategies in Spain), specifically action C12A2.
+This work is a contribution to the EsMarEs project (Marine Strategies in Spain), and more specifically to action C12A2, "Characterization of the nature and composition of the seabed in marine demarcations and generation of information layers for better management." We would like to thank the projects from which the data originated, such as LIFE IP-INTEMARES (LIFE 15 IPE ES012) and the VIATAR project (IEO). The authors thank all participants and crews of the Spanish Institute of Oceanography-IEO cruises on board the R/V Ángeles Alvariño and R/V Ramón Margalef.
 
 # References
