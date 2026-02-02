@@ -66,9 +66,6 @@ While @Gafeira:2012 provided a path-breaking approach, APM was built to overcome
 
 APM was designed following a modular architecture using ArcGIS Model Builder. This choice reflects a trade-off between the absolute performance of raw code (like Python/C++) and the **usability/transparency** required by the target research community. By using Model Builder, the workflow is visual and "open," allowing researchers to inspect every geoprocessing step, which is crucial for scientific reproducibility.
 
-![Flowchart of the APM tool workflow, illustrating the sequential stages from bathymetry optimization to the final extraction of geomorphometric parameters.](https://raw.githubusercontent.com/gemar-ieo/APM/main/Images/workflow.png)
-
-
 The design centers on three key components:
 - **Optimization Stage**: Uses focal statistics to handle sensor noise, ensuring that the subsequent Bathymetric Position Index (BPI) calculation does not generate false positives from data artifacts.
 - **Feature Delineation**: Leverages BPI [@Lundblad:2006] to define pockmark rims. The design choice here was to allow a "Selective Manual Cleaning" phase. This reflects a design philosophy of "Human-in-the-loop" AI, acknowledging that geological expertise is still necessary to distinguish pockmarks from other depressions like ship-wreck scours or dredging marks.
