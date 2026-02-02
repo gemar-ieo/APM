@@ -67,13 +67,10 @@ In the `TEST` folder, you will find all the necessary data to perform the test u
 
 To begin, download the bathymetry file from the `DATA` folder, then follow the instructions in the README_TEST.md file for each step of the process.
 
-## How to cite
+### How to cite
+If you use APM Toolbox in your work, please cite it as:
 
-If you use APM Toolbox in your research, please cite:
-
-Fernández-Salas et al. (2026)  
-APM Toolbox v1.0  
-Zenodo DOI: https://doi.org/10.5281/zenodo.18454767
+Fernández-Salas, L.M., Sánchez-Guillamón, O., Villar-Menéndez, I., Díez-García, I.P., Arrese, B., Sayago-Gil, M. (2026). APM Toolbox – Automatic Pockmarks Mapping. Zenodo. https://doi.org/10.5281/zenodo.18454767
 
 A software paper describing the toolbox is submitted to the Journal of Open Source Software (JOSS).
 
@@ -84,5 +81,6 @@ This software is released under the GNU General Public License v3.0.
 ## Learn More
 
 For more details about the **Automatic Pockmarks Mapping (APM)** tool, visit the [official website](https://gemar.ieo.csic.es/APM/).
+
 
 
