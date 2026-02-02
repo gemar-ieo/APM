@@ -42,31 +42,44 @@ bibliography: paper.bib
 
 # Summary
 
-**Automatic Pockmarks Mapping (APM)** is an ArcGIS Desktop add-in designed to automate the detection and morphometric characterization of seabed pockmarks from bathymetric datasets [@Gafeira:2012; @Gafeira:2018]. The tool integrates standardized geoprocessing workflows into a reproducible pipeline that reduces manual interpretation time. APM is structured into three main functions: **Bathymetry Raster Optimization**, **Pockmark Mapping**, and **Pockmark Parameters Extraction** [@Andrews:2010; @Picard:2018].
+Pockmarks are crater-like depressions on the seafloor formed by the focused expulsion of fluids such as methane or pore water. They are important indicators of active geological processes, seabed stability, and benthic habitat distribution [@Judd:2007]. High-resolution multibeam bathymetry now allows researchers to detect thousands of these features, but manual mapping is slow and inconsistent.
+
+**Automatic Pockmarks Mapping (APM)** is an ArcGIS Desktop addins toolbox for Arcmap that automates the detection and morphometric characterization of seabed pockmarks. The software converts bathymetric digital elevation models into standardized geomorphological datasets through a reproducible workflow. APM is organized into three main stages: bathymetry optimization, pockmark delineation, and parameter extraction. The tool reduces operator bias and enables large-scale statistical analysis of pockmark fields while remaining accessible to users without advanced programming skills.
 
 # Statement of need
 
 Manual mapping of high-resolution multibeam data is **time-consuming and subjective**, which increases the risk of errors and limits consistency in subsequent analyses [@Andrews:2010; @Gafeira:2012]. While several methodologies for mapping pockmarks exist, there is a need for fast, objective, and free tools that minimize user involvement. **APM Toolbox** addresses this by providing a systematic methodology to identify, spatially delineate, and extract quantitative parameters of pockmarks regardless of the shape and size of the depression [@Gafeira:2018; @Picard:2018].
 
+APM addresses the need for a standardized and objective workflow that integrates directly into a widely used GIS environment. The target audience includes marine geologists, geomorphologists, environmental agencies, and graduate students who require automated tools but may not have programming expertise. By providing repeatable detection and measurement procedures, APM supports quantitative comparisons between regions and time periods.
+
 # State of the field
 
-Several tools have been developed for pockmark mapping, such as those by **Andrews et al. (2010)**, **Gafeira et al. (2012, 2018)**, and **Picard et al. (2018)** [@Andrews:2010; @Gafeira:2012; @Gafeira:2018; @Picard:2018]. However, many of these rely on proprietary tools or require simplified terrain assumptions that limit their applicability in irregular submarine environments [@Gafeira:2012; @Picard:2018]. Unlike these, APM is distributed as **free software under the GNU GPL v3.0 license** and focuses on a balance between automation and expert judgment during the manual cleaning phase [@Gafeira:2018].
+Several semi-automated approaches to pockmark mapping have been proposed. Script-based tools such as those of @Andrews:2010 provide flexibility but require coding expertise. GIS-based toolboxes developed by @Gafeira:2012 and @Gafeira:2018 demonstrated that automated pockmark characterization is feasible within ArcGIS environments. More recent work has used geomorphometric approaches to infer seabed processes from mapped depressions [@Picard:2018].
+
+APM extends this line of research with a design focused on operational usability. Unlike workflows that assume flat terrain or require external dependencies, APM is packaged as a self-contained toolbox that operates on sloping continental margins and complex bathymetry. The software incorporates a robust irregularity filtering strategy derived from geomorphometric principles and emphasizes a hybrid approach combining automation with expert validation. This design choice reflects a “build vs. contribute” decision: APM was developed to solve practical limitations encountered in institutional workflows where existing tools could not be directly integrated or adapted.
 
 # Software design
 
-APM employs a modular design using ArcGIS Model Builder, balancing **performance** with **usability and transparency** [@Gafeira:2018]. The visual workflow allows researchers to inspect every processing step, which is crucial for reproducibility in scientific studies.
+APM is implemented using ArcGIS Model Builder in a modular architecture that prioritizes transparency and reproducibility. The visual workflow allows users to inspect every processing step and adapt parameters to their datasets without modifying source code.
 
-Key components include:
+The pipeline consists of three components:
 
-- **Optimization Stage**: Applies focal statistics to reduce noise in DEMs, ensuring Bathymetric Position Index (BPI) calculations do not produce false positives [@Lundblad:2006].  
-- **Feature Delineation**: Uses BPI to define pockmark rims, with a selective manual cleaning step to allow human expertise in distinguishing pockmarks from artifacts [@Lundblad:2006; @Gafeira:2018].  
-- **Geomorphometric Engine**: Automatically extracts >12 parameters, including orientation via the "Longest Axis" method, which is critical for interpreting seabed currents [@Picard:2018].
+- **Optimization stage**: Digital elevation models are smoothed using focal statistics to suppress acquisition noise and avoid false detections during terrain analysis.
+
+- **Feature delineation**: Pockmark rims are identified using the Bathymetric Position Index (BPI) [@Lundblad:2006]. A selective manual cleaning step is intentionally preserved to allow expert interpretation when natural depressions overlap with anthropogenic artifacts.
+
+- **Geomorphometric engine**: The toolbox extracts geometric descriptors including area, depth, volume, eccentricity, and orientation. Orientation is computed using a longest-axis method consistent with previous geomorphometric studies [@Picard:2018], enabling interpretation of bottom current influence.
+
+This architecture reflects a deliberate trade-off: while lower-level code could achieve marginal speed improvements, the chosen design maximizes accessibility, auditability, and long-term maintainability.
+
 
 # Research impact statement
 
 APM has been applied in the **EsMarEs** project (Marine Strategies in Spain, action C12A2), covering diverse test areas: Guadiaro Deep Fan, Capbreton Canyon, Murcia Slope, and Mallorca Channel.
 
 It has been successfully employed in academic research, including the Master’s thesis by @SuaEscobar:2025, generating standardized geomorphological layers (shapefiles and density maps) for marine spatial planning. Benchmarks show APM can reduce analysis time by up to 80% relative to manual workflows. By providing reproducible workflows, APM bridges raw bathymetric data and high-level analyses necessary for environmental strategy and scientific research.
+
+The software is actively maintained in a public repository and distributed under an open license, supporting community inspection, reuse, and extension.
 
 # AI usage disclosure
 
