@@ -25,4 +25,26 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: joss-paper-pdf
+          path: paper.pdfname: Generate JOSS PDF
+on: [push, pull_request]
+
+jobs:
+  paper:
+    runs-on: ubuntu-latest
+    name: Paper Draft
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build PDF
+        # Esta es la versión actualizada y correcta:
+        uses: openjournals/openjournals-multi-action@v1
+        with:
+          journal: joss
+          paper-path: paper.md
+
+      - name: Upload PDF
+        uses: actions/upload-artifact@v4
+        with:
+          name: paper
           path: paper.pdf
