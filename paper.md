@@ -10,6 +10,7 @@ authors:
   - name: Luis Miguel Fernández-Salas
     orcid: 0000-0001-9689-0084
     affiliation: 1
+    corresponding: true
   - name: Olga Sánchez-Guillamón
     orcid: 0000-0002-3068-6176
     affiliation: 2
@@ -38,7 +39,6 @@ affiliations:
     index: 5
 date: 2 February 2026
 bibliography: paper.bib
----
 
 # Summary
 
@@ -72,10 +72,11 @@ The pipeline consists of three components:
 
 This architecture reflects a deliberate trade-off: while lower-level code could achieve marginal speed improvements, the chosen design maximizes accessibility, auditability, and long-term maintainability.
 
+![Flowchart illustrating the sequential stages of the automated script for pockmarks mapping. The diagram delineates distinct elements, including input data, parameter entries, processes and data outputs. Each stage is demarcated to provide a clear visual representation of the sequential workflow within the automated cartography script. \label{fig: 1}](workflow.png)
 
 # Research impact statement
 
-APM has been applied in the **EsMarEs** project (Marine Strategies in Spain, action C12A2), covering diverse test areas: Guadiaro Deep Fan, Capbreton Canyon, Murcia Slope, and Mallorca Channel.
+APM has been applied in the **ESMARES** project (Marine Strategies in Spain, action C12A2), covering diverse test areas: Guadiaro Deep Fan, Capbreton Canyon, Murcia Slope, and Mallorca Channel.
 
 It has been successfully employed in academic research, including the Master’s thesis by @SuaEscobar:2025, generating standardized geomorphological layers (shapefiles and density maps) for marine spatial planning. Benchmarks show APM can reduce analysis time by up to 80% relative to manual workflows. By providing reproducible workflows, APM bridges raw bathymetric data and high-level analyses necessary for environmental strategy and scientific research.
 
