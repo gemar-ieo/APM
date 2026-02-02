@@ -39,7 +39,7 @@ affiliations:
     index: 5
 date: 2 February 2026
 bibliography: paper.bib
-
+---
 # Summary
 
 Pockmarks are crater-like depressions on the seafloor formed by the focused expulsion of fluids such as methane or pore water. They are important indicators of active geological processes, seabed stability, and benthic habitat distribution [@Judd:2007]. High-resolution multibeam bathymetry now allows researchers to detect thousands of these features, but manual mapping is slow and inconsistent.
