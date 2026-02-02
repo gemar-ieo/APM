@@ -1,0 +1,28 @@
+name: Generate JOSS PDF
+# Se activa cada vez que subes cambios (push) o abres un Pull Request
+on: [push, pull_request]
+
+jobs:
+  paper:
+    runs-on: ubuntu-latest
+    name: Paper Draft
+    steps:
+      # Paso 1: Descarga tu código del repositorio a la máquina virtual de GitHub
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # Paso 2: Usa la herramienta oficial de JOSS (Inara) para compilar el PDF
+      - name: Build PDF
+        uses: openjournals/openjournals-multi-action@master
+        with:
+          journal: joss
+          # Si tu paper.md está en la raíz, pon 'paper.md'
+          # Si está en una carpeta llamada 'paper', pon 'paper/paper.md'
+          paper-path: paper.md
+
+      # Paso 3: Guarda el PDF resultante para que puedas descargarlo
+      - name: Upload PDF
+        uses: actions/upload-artifact@v4
+        with:
+          name: joss-paper-pdf
+          path: paper.pdf
