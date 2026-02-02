@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+title: "APM Toolbox – Automatic Pockmarks Mapping"
+message: "If you use this software, please cite it as below."
+type: software
+authors:
+  - family-names: Fernández-Salas
+    given-names: Luis Miguel
+  - family-names: Sánchez-Guillamón
+    given-names: Olga
+  - family-names: Villar-Menéndez
+    given-names: Izaskun
+  - family-names: Díez-García
+    given-names: Irene Pilar
+  - family-names: Arrese
+    given-names: Beatriz
+  - family-names: Sayago-Gil
+    given-names: Miriam
+repository-code: "https://github.com/gemar-ieo/APM"
+doi: https://doi.org/10.5281/zenodo.18454767
+license: GPL-3.0
+version: v1.0
+date-released: 2026-02-02
